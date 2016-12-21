@@ -1365,7 +1365,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/sh -x";
-			shellScript = "VARIANT=\"-tiles\"\nAPPBASEDIR=$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\nAPPCONTENTSDIR=$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH\nAPPRESOURCESDIR=$APPCONTENTSDIR/Resources\nAPPFRAMEWORKSDIR=$TARGET_BUILD_DIR/$FRAMEWORKS_FOLDER_PATH\nAPPTARGETDIR=$TARGET_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\nAPPDATADIR=$APPRESOURCESDIR/data\nAPPTARGET=$TARGET_BUILD_DIR/$EXECUTABLE_PATH\n\nBASEDIR=$SRCROOT/..\nBASEDATADIR=$BASEDIR/data\nFRAMEWORKSDIR=/Library/Frameworks\n\nmkdir -p $APPDATADIR/\n\npushd $BASEDIR/lang/\n./compile_mo.sh all\npopd\n\ncp -f $BASEDATADIR/osx/Cataclysm.sh $APPTARGETDIR/\ncp -f $BASEDATADIR/osx/AppIcon.icns $APPRESOURCESDIR/\ncp -f $BASEDATADIR/fontdata.json $APPDATADIR/\ncp -fR $BASEDATADIR/core $APPDATADIR/\ncp -fR $BASEDATADIR/font $APPDATADIR/\ncp -fR $BASEDATADIR/json $APPDATADIR/\ncp -fR $BASEDATADIR/mods $APPDATADIR/\ncp -fR $BASEDATADIR/names $APPDATADIR/\ncp -fR $BASEDATADIR/raw $APPDATADIR/\ncp -fR $BASEDATADIR/recycling $APPDATADIR/\ncp -fR $BASEDATADIR/motd $APPDATADIR/\ncp -fR $BASEDATADIR/credits $APPDATADIR/\ncp -fR $BASEDATADIR/title $APPDATADIR/\nmkdir -p $APPRESOURCESDIR/lang/mo/\ncp -fpR $BASEDIR/lang/mo/ $APPRESOURCESDIR/lang/mo/\n\nif [[ -n \"$VARIANT\" ]]\nthen\n    cp -fR $BASEDATADIR/sound $APPDATADIR/\n    cd $APPFRAMEWORKSDIR && ln -fs SDL2_mixer.framework/Frameworks/Vorbis.framework Vorbis.framework\n    cd $APPFRAMEWORKSDIR && ln -fs SDL2_mixer.framework/Frameworks/Ogg.framework Ogg.framework\n    cd $APPFRAMEWORKSDIR/SDL2_mixer.framework/Frameworks && find . -maxdepth 1 -type d -not -name '*Vorbis.framework' -not -name '*Ogg.framework' -not -name '.' | xargs rm -rf\nfi\nfor lib in `otool -L $APPTARGET | grep .dylib | sed -n 's/\\(.*\\.dylib\\).*/\\1/p' | grep -v /usr/lib/`; do install_name_tool -change $lib @rpath/`basename $lib` $APPTARGET; done;\n\nmv $APPTARGET $APPTARGETDIR/cataclysm$VARIANT\n\nif [[ \"$CONFIGURATION\" == \"Debug\" && -n \"$VARIANT\" ]]\nthen\n    rm $APPTARGETDIR/Cataclysm.sh\n    ln -s $APPTARGETDIR/cataclysm-tiles $APPTARGETDIR/Cataclysm.sh\nfi";
+			shellScript = "VARIANT=\"-tiles\"\nAPPBASEDIR=$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\nAPPCONTENTSDIR=$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH\nAPPRESOURCESDIR=$APPCONTENTSDIR/Resources\nAPPFRAMEWORKSDIR=$TARGET_BUILD_DIR/$FRAMEWORKS_FOLDER_PATH\nAPPTARGETDIR=$TARGET_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\nAPPDATADIR=$APPRESOURCESDIR/data\nAPPTARGET=$TARGET_BUILD_DIR/$EXECUTABLE_PATH\n\nBASEDIR=$SRCROOT/..\nBASEDATADIR=$BASEDIR/data\nFRAMEWORKSDIR=/Library/Frameworks\n\nmkdir -p $APPDATADIR/\n\npushd $BASEDIR/lang/\n./compile_mo.sh all\npopd\n\ncp -f $BASEDATADIR/osx/Cataclysm.sh $APPTARGETDIR/\ncp -f $BASEDATADIR/osx/AppIcon.icns $APPRESOURCESDIR/\ncp -f $BASEDATADIR/fontdata.json $APPDATADIR/\ncp -fR $BASEDATADIR/core $APPDATADIR/\ncp -fR $BASEDATADIR/font $APPDATADIR/\ncp -fR $BASEDATADIR/json $APPDATADIR/\ncp -fR $BASEDATADIR/mods $APPDATADIR/\ncp -fR $BASEDATADIR/names $APPDATADIR/\ncp -fR $BASEDATADIR/raw $APPDATADIR/\ncp -fR $BASEDATADIR/recycling $APPDATADIR/\ncp -fR $BASEDATADIR/motd $APPDATADIR/\ncp -fR $BASEDATADIR/credits $APPDATADIR/\ncp -fR $BASEDATADIR/title $APPDATADIR/\nmkdir -p $APPRESOURCESDIR/lang/mo/\ncp -fpR $BASEDIR/lang/mo/ $APPRESOURCESDIR/lang/mo/\n\nif [[ -n \"$VARIANT\" ]]\nthen\n    cp -fR $BASEDATADIR/sound $APPDATADIR/\n    cd $APPFRAMEWORKSDIR && ln -fs SDL2_mixer.framework/Frameworks/Vorbis.framework Vorbis.framework\n    cd $APPFRAMEWORKSDIR && ln -fs SDL2_mixer.framework/Frameworks/Ogg.framework Ogg.framework\n    cd $APPFRAMEWORKSDIR/SDL2_mixer.framework/Frameworks && find . -maxdepth 1 -type d -not -name '*Vorbis.framework' -not -name '*Ogg.framework' -not -name '.' | xargs rm -rf\nfi\nfor lib in `otool -L $APPTARGET | grep .dylib | sed -n 's/\\(.*\\.dylib\\).*/\\1/p' | grep -v /usr/lib/`; do install_name_tool -change $lib @rpath/`basename $lib` $APPTARGET; done;\n\nstrip $APPTARGET\nmv $APPTARGET $APPTARGETDIR/cataclysm$VARIANT\n\nif [[ \"$CONFIGURATION\" == \"Debug\" && -n \"$VARIANT\" ]]\nthen\n    rm $APPTARGETDIR/Cataclysm.sh\n    ln -s $APPTARGETDIR/cataclysm-tiles $APPTARGETDIR/Cataclysm.sh\nfi";
 		};
 		4341B2DF1E06B7F600CF3106 /* Set Version */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1420,7 +1420,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/sh -x";
-			shellScript = "VARIANT=\"\"\nAPPBASEDIR=$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\nAPPCONTENTSDIR=$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH\nAPPRESOURCESDIR=$APPCONTENTSDIR/Resources\nAPPFRAMEWORKSDIR=$TARGET_BUILD_DIR/$FRAMEWORKS_FOLDER_PATH\nAPPTARGETDIR=$TARGET_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\nAPPDATADIR=$APPRESOURCESDIR/data\nAPPTARGET=$TARGET_BUILD_DIR/$EXECUTABLE_PATH\n\nBASEDIR=$SRCROOT/..\nBASEDATADIR=$BASEDIR/data\nFRAMEWORKSDIR=/Library/Frameworks\n\nmkdir -p $APPDATADIR/\n\npushd $BASEDIR/lang/\n./compile_mo.sh all\npopd\n\ncp -f $BASEDATADIR/osx/Cataclysm.sh $APPTARGETDIR/\ncp -f $BASEDATADIR/osx/AppIcon.icns $APPRESOURCESDIR/\ncp -f $BASEDATADIR/fontdata.json $APPDATADIR/\ncp -fR $BASEDATADIR/core $APPDATADIR/\ncp -fR $BASEDATADIR/font $APPDATADIR/\ncp -fR $BASEDATADIR/json $APPDATADIR/\ncp -fR $BASEDATADIR/mods $APPDATADIR/\ncp -fR $BASEDATADIR/names $APPDATADIR/\ncp -fR $BASEDATADIR/raw $APPDATADIR/\ncp -fR $BASEDATADIR/recycling $APPDATADIR/\ncp -fR $BASEDATADIR/motd $APPDATADIR/\ncp -fR $BASEDATADIR/credits $APPDATADIR/\ncp -fR $BASEDATADIR/title $APPDATADIR/\nmkdir -p $APPRESOURCESDIR/lang/mo/\ncp -fpR $BASEDIR/lang/mo/ $APPRESOURCESDIR/lang/mo/\n\nif [[ -n \"$VARIANT\" ]]\nthen\ncp -fR $BASEDATADIR/sound $APPDATADIR/\ncd $APPFRAMEWORKSDIR && ln -fs SDL2_mixer.framework/Frameworks/Vorbis.framework Vorbis.framework\ncd $APPFRAMEWORKSDIR && ln -fs SDL2_mixer.framework/Frameworks/Ogg.framework Ogg.framework\ncd $APPFRAMEWORKSDIR/SDL2_mixer.framework/Frameworks && find . -maxdepth 1 -type d -not -name '*Vorbis.framework' -not -name '*Ogg.framework' -not -name '.' | xargs rm -rf\nfi\nfor lib in `otool -L $APPTARGET | grep .dylib | sed -n 's/\\(.*\\.dylib\\).*/\\1/p' | grep -v /usr/lib/`; do install_name_tool -change $lib @rpath/`basename $lib` $APPTARGET; done;\n\nmv $APPTARGET $APPTARGETDIR/cataclysm$VARIANT\n\nif [[ \"$CONFIGURATION\" == \"Debug\" && -n \"$VARIANT\" ]]\nthen\nrm $APPTARGETDIR/Cataclysm.sh\nln -s $APPTARGETDIR/cataclysm-tiles $APPTARGETDIR/Cataclysm.sh\nfi";
+			shellScript = "VARIANT=\"\"\nAPPBASEDIR=$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\nAPPCONTENTSDIR=$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH\nAPPRESOURCESDIR=$APPCONTENTSDIR/Resources\nAPPFRAMEWORKSDIR=$TARGET_BUILD_DIR/$FRAMEWORKS_FOLDER_PATH\nAPPTARGETDIR=$TARGET_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\nAPPDATADIR=$APPRESOURCESDIR/data\nAPPTARGET=$TARGET_BUILD_DIR/$EXECUTABLE_PATH\n\nBASEDIR=$SRCROOT/..\nBASEDATADIR=$BASEDIR/data\nFRAMEWORKSDIR=/Library/Frameworks\n\nmkdir -p $APPDATADIR/\n\npushd $BASEDIR/lang/\n./compile_mo.sh all\npopd\n\ncp -f $BASEDATADIR/osx/Cataclysm.sh $APPTARGETDIR/\ncp -f $BASEDATADIR/osx/AppIcon.icns $APPRESOURCESDIR/\ncp -f $BASEDATADIR/fontdata.json $APPDATADIR/\ncp -fR $BASEDATADIR/core $APPDATADIR/\ncp -fR $BASEDATADIR/font $APPDATADIR/\ncp -fR $BASEDATADIR/json $APPDATADIR/\ncp -fR $BASEDATADIR/mods $APPDATADIR/\ncp -fR $BASEDATADIR/names $APPDATADIR/\ncp -fR $BASEDATADIR/raw $APPDATADIR/\ncp -fR $BASEDATADIR/recycling $APPDATADIR/\ncp -fR $BASEDATADIR/motd $APPDATADIR/\ncp -fR $BASEDATADIR/credits $APPDATADIR/\ncp -fR $BASEDATADIR/title $APPDATADIR/\nmkdir -p $APPRESOURCESDIR/lang/mo/\ncp -fpR $BASEDIR/lang/mo/ $APPRESOURCESDIR/lang/mo/\n\nif [[ -n \"$VARIANT\" ]]\nthen\ncp -fR $BASEDATADIR/sound $APPDATADIR/\ncd $APPFRAMEWORKSDIR && ln -fs SDL2_mixer.framework/Frameworks/Vorbis.framework Vorbis.framework\ncd $APPFRAMEWORKSDIR && ln -fs SDL2_mixer.framework/Frameworks/Ogg.framework Ogg.framework\ncd $APPFRAMEWORKSDIR/SDL2_mixer.framework/Frameworks && find . -maxdepth 1 -type d -not -name '*Vorbis.framework' -not -name '*Ogg.framework' -not -name '.' | xargs rm -rf\nfi\nfor lib in `otool -L $APPTARGET | grep .dylib | sed -n 's/\\(.*\\.dylib\\).*/\\1/p' | grep -v /usr/lib/`; do install_name_tool -change $lib @rpath/`basename $lib` $APPTARGET; done;\n\nstrip $APPTARGET\nmv $APPTARGET $APPTARGETDIR/cataclysm$VARIANT\n\nif [[ \"$CONFIGURATION\" == \"Debug\" && -n \"$VARIANT\" ]]\nthen\nrm $APPTARGETDIR/Cataclysm.sh\nln -s $APPTARGETDIR/cataclysm-tiles $APPTARGETDIR/Cataclysm.sh\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1820,7 +1820,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1855,6 +1854,7 @@
 					"-DLUA",
 				);
 				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -1878,7 +1878,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1908,6 +1907,7 @@
 					"-DRELEASE",
 				);
 				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
 		};

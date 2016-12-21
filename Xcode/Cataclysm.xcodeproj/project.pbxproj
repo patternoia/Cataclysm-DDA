@@ -214,6 +214,191 @@
 		4381F5661DFF66A700A3B20B /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4381F5621DFF66A700A3B20B /* SDL2.framework */; };
 		4388A2FD1E003A98008F29D6 /* gfx in Resources */ = {isa = PBXBuildFile; fileRef = 4381FEC91DFF69C400A3B20B /* gfx */; };
 		4388A2FE1E003AA0008F29D6 /* lua in Resources */ = {isa = PBXBuildFile; fileRef = 4381FEE71DFF6A1F00A3B20B /* lua */; };
+		438EAAF71E0AD5E100E0D9CE /* emit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F38F1DFF620000A3B20B /* emit.cpp */; };
+		438EAAF81E0AD5E100E0D9CE /* skill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4691DFF620100A3B20B /* skill.cpp */; };
+		438EAAF91E0AD5E100E0D9CE /* vehicle_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F48B1DFF620100A3B20B /* vehicle_group.cpp */; };
+		438EAAFA1E0AD5E100E0D9CE /* mutation_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4281DFF620100A3B20B /* mutation_data.cpp */; };
+		438EAAFB1E0AD5E100E0D9CE /* vitamin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4951DFF620100A3B20B /* vitamin.cpp */; };
+		438EAAFC1E0AD5E100E0D9CE /* submap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4721DFF620100A3B20B /* submap.cpp */; };
+		438EAAFD1E0AD5E100E0D9CE /* start_location.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F46F1DFF620100A3B20B /* start_location.cpp */; };
+		438EAAFE1E0AD5E100E0D9CE /* construction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F36B1DFF620000A3B20B /* construction.cpp */; };
+		438EAAFF1E0AD5E100E0D9CE /* json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3DA1DFF620100A3B20B /* json.cpp */; };
+		438EAB001E0AD5E100E0D9CE /* creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3781DFF620000A3B20B /* creature.cpp */; };
+		438EAB011E0AD5E100E0D9CE /* debug_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3821DFF620000A3B20B /* debug_menu.cpp */; };
+		438EAB021E0AD5E100E0D9CE /* iuse_software_kitten.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3D21DFF620100A3B20B /* iuse_software_kitten.cpp */; };
+		438EAB031E0AD5E100E0D9CE /* mission.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4061DFF620100A3B20B /* mission.cpp */; };
+		438EAB041E0AD5E100E0D9CE /* savegame_json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F45E1DFF620100A3B20B /* savegame_json.cpp */; };
+		438EAB051E0AD5E100E0D9CE /* color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3651DFF620000A3B20B /* color.cpp */; };
+		438EAB061E0AD5E100E0D9CE /* savegame_legacy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F45F1DFF620100A3B20B /* savegame_legacy.cpp */; };
+		438EAB071E0AD5E100E0D9CE /* iuse_actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3CE1DFF620100A3B20B /* iuse_actor.cpp */; };
+		438EAB081E0AD5E100E0D9CE /* mutation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4261DFF620100A3B20B /* mutation.cpp */; };
+		438EAB091E0AD5E100E0D9CE /* filesystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F39C1DFF620000A3B20B /* filesystem.cpp */; };
+		438EAB0A1E0AD5E100E0D9CE /* projectile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4511DFF620100A3B20B /* projectile.cpp */; };
+		438EAB0B1E0AD5E100E0D9CE /* name.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F42A1DFF620100A3B20B /* name.cpp */; };
+		438EAB0C1E0AD5E100E0D9CE /* overlay_ordering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4391DFF620100A3B20B /* overlay_ordering.cpp */; };
+		438EAB0D1E0AD5E100E0D9CE /* options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4351DFF620100A3B20B /* options.cpp */; };
+		438EAB0E1E0AD5E100E0D9CE /* morale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4211DFF620100A3B20B /* morale.cpp */; };
+		438EAB0F1E0AD5E100E0D9CE /* char_validity_check.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F35B1DFF620000A3B20B /* char_validity_check.cpp */; };
+		438EAB101E0AD5E100E0D9CE /* coordinate_conversions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F36E1DFF620000A3B20B /* coordinate_conversions.cpp */; };
+		438EAB111E0AD5E100E0D9CE /* catalua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3591DFF620000A3B20B /* catalua.cpp */; };
+		438EAB121E0AD5E100E0D9CE /* trapfunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F47D1DFF620100A3B20B /* trapfunc.cpp */; };
+		438EAB131E0AD5E100E0D9CE /* safemode_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F45B1DFF620100A3B20B /* safemode_ui.cpp */; };
+		438EAB141E0AD5E100E0D9CE /* fault.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3981DFF620000A3B20B /* fault.cpp */; };
+		438EAB151E0AD5E100E0D9CE /* output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4371DFF620100A3B20B /* output.cpp */; };
+		438EAB161E0AD5E100E0D9CE /* computer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3691DFF620000A3B20B /* computer.cpp */; };
+		438EAB171E0AD5E100E0D9CE /* inventory_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3B91DFF620000A3B20B /* inventory_ui.cpp */; };
+		438EAB181E0AD5E100E0D9CE /* action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3321DFF620000A3B20B /* action.cpp */; };
+		438EAB191E0AD5E100E0D9CE /* visitable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4931DFF620100A3B20B /* visitable.cpp */; };
+		438EAB1A1E0AD5E100E0D9CE /* mission_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F40D1DFF620100A3B20B /* mission_ui.cpp */; };
+		438EAB1B1E0AD5E100E0D9CE /* mission_place.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F40B1DFF620100A3B20B /* mission_place.cpp */; };
+		438EAB1C1E0AD5E100E0D9CE /* monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F41D1DFF620100A3B20B /* monster.cpp */; };
+		438EAB1D1E0AD5E100E0D9CE /* mission_fail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F40A1DFF620100A3B20B /* mission_fail.cpp */; };
+		438EAB1E1E0AD5E100E0D9CE /* map_selector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3EE1DFF620100A3B20B /* map_selector.cpp */; };
+		438EAB1F1E0AD5E100E0D9CE /* bodypart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F34C1DFF620000A3B20B /* bodypart.cpp */; };
+		438EAB201E0AD5E100E0D9CE /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3801DFF620000A3B20B /* debug.cpp */; };
+		438EAB211E0AD5E100E0D9CE /* drawing_primitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3881DFF620000A3B20B /* drawing_primitives.cpp */; };
+		438EAB221E0AD5E100E0D9CE /* active_item_cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3341DFF620000A3B20B /* active_item_cache.cpp */; };
+		438EAB231E0AD5E100E0D9CE /* mtype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4241DFF620100A3B20B /* mtype.cpp */; };
+		438EAB241E0AD5E100E0D9CE /* mission_companion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4081DFF620100A3B20B /* mission_companion.cpp */; };
+		438EAB251E0AD5E100E0D9CE /* consumption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F36D1DFF620000A3B20B /* consumption.cpp */; };
+		438EAB261E0AD5E100E0D9CE /* item_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3C01DFF620000A3B20B /* item_factory.cpp */; };
+		438EAB271E0AD5E100E0D9CE /* item_search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3C61DFF620000A3B20B /* item_search.cpp */; };
+		438EAB281E0AD5E100E0D9CE /* text_snippets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4741DFF620100A3B20B /* text_snippets.cpp */; };
+		438EAB291E0AD5E100E0D9CE /* wish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4A01DFF620100A3B20B /* wish.cpp */; };
+		438EAB2A1E0AD5E100E0D9CE /* scent_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4621DFF620100A3B20B /* scent_map.cpp */; };
+		438EAB2B1E0AD5E100E0D9CE /* game_inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3A41DFF620000A3B20B /* game_inventory.cpp */; };
+		438EAB2C1E0AD5E100E0D9CE /* ammo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F33D1DFF620000A3B20B /* ammo.cpp */; };
+		438EAB2D1E0AD5E100E0D9CE /* newcharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F42C1DFF620100A3B20B /* newcharacter.cpp */; };
+		438EAB2E1E0AD5E100E0D9CE /* animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F33F1DFF620000A3B20B /* animation.cpp */; };
+		438EAB2F1E0AD5E100E0D9CE /* cata_tiles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3521DFF620000A3B20B /* cata_tiles.cpp */; };
+		438EAB301E0AD5E100E0D9CE /* translations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4791DFF620100A3B20B /* translations.cpp */; };
+		438EAB311E0AD5E100E0D9CE /* armor_layers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3411DFF620000A3B20B /* armor_layers.cpp */; };
+		438EAB321E0AD5E100E0D9CE /* posix_time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F44C1DFF620100A3B20B /* posix_time.cpp */; };
+		438EAB331E0AD5E100E0D9CE /* mapgenformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3F81DFF620100A3B20B /* mapgenformat.cpp */; };
+		438EAB341E0AD5E100E0D9CE /* editmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F38B1DFF620000A3B20B /* editmap.cpp */; };
+		438EAB351E0AD5E100E0D9CE /* mission_start.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F40C1DFF620100A3B20B /* mission_start.cpp */; };
+		438EAB361E0AD5E100E0D9CE /* lua_console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3E61DFF620100A3B20B /* lua_console.cpp */; };
+		438EAB371E0AD5E100E0D9CE /* item_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3C21DFF620000A3B20B /* item_group.cpp */; };
+		438EAB381E0AD5E100E0D9CE /* vehicle_selector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F48D1DFF620100A3B20B /* vehicle_selector.cpp */; };
+		438EAB391E0AD5E100E0D9CE /* tileray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4771DFF620100A3B20B /* tileray.cpp */; };
+		438EAB3A1E0AD5E100E0D9CE /* npctalk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4331DFF620100A3B20B /* npctalk.cpp */; };
+		438EAB3B1E0AD5E100E0D9CE /* mapgen_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3F61DFF620100A3B20B /* mapgen_functions.cpp */; };
+		438EAB3C1E0AD5E100E0D9CE /* gates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3A81DFF620000A3B20B /* gates.cpp */; };
+		438EAB3D1E0AD5E100E0D9CE /* sounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F46B1DFF620100A3B20B /* sounds.cpp */; };
+		438EAB3E1E0AD5E100E0D9CE /* advanced_inv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F33B1DFF620000A3B20B /* advanced_inv.cpp */; };
+		438EAB3F1E0AD5E100E0D9CE /* missiondef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F40E1DFF620100A3B20B /* missiondef.cpp */; };
+		438EAB401E0AD5E100E0D9CE /* faction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3961DFF620000A3B20B /* faction.cpp */; };
+		438EAB411E0AD5E100E0D9CE /* npc_class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F42F1DFF620100A3B20B /* npc_class.cpp */; };
+		438EAB421E0AD5E100E0D9CE /* mutation_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4291DFF620100A3B20B /* mutation_ui.cpp */; };
+		438EAB431E0AD5E100E0D9CE /* map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3EB1DFF620100A3B20B /* map.cpp */; };
+		438EAB441E0AD5E100E0D9CE /* sdltiles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4641DFF620100A3B20B /* sdltiles.cpp */; };
+		438EAB451E0AD5E100E0D9CE /* cursesport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F37D1DFF620000A3B20B /* cursesport.cpp */; };
+		438EAB461E0AD5E100E0D9CE /* effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F38D1DFF620000A3B20B /* effect.cpp */; };
+		438EAB471E0AD5E100E0D9CE /* live_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3E01DFF620100A3B20B /* live_view.cpp */; };
+		438EAB481E0AD5E100E0D9CE /* damage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F37E1DFF620000A3B20B /* damage.cpp */; };
+		438EAB491E0AD5E100E0D9CE /* craft_command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3721DFF620000A3B20B /* craft_command.cpp */; };
+		438EAB4A1E0AD5E100E0D9CE /* flag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F39F1DFF620000A3B20B /* flag.cpp */; };
+		438EAB4B1E0AD5E100E0D9CE /* iexamine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3B01DFF620000A3B20B /* iexamine.cpp */; };
+		438EAB4C1E0AD5E100E0D9CE /* mission_end.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4091DFF620100A3B20B /* mission_end.cpp */; };
+		438EAB4D1E0AD5E100E0D9CE /* pathfinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4421DFF620100A3B20B /* pathfinding.cpp */; };
+		438EAB4E1E0AD5E100E0D9CE /* veh_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4871DFF620100A3B20B /* veh_type.cpp */; };
+		438EAB4F1E0AD5E100E0D9CE /* character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F35D1DFF620000A3B20B /* character.cpp */; };
+		438EAB501E0AD5E100E0D9CE /* creature_tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F37A1DFF620000A3B20B /* creature_tracker.cpp */; };
+		438EAB511E0AD5E100E0D9CE /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3B41DFF620000A3B20B /* input.cpp */; };
+		438EAB521E0AD5E100E0D9CE /* mapbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3F01DFF620100A3B20B /* mapbuffer.cpp */; };
+		438EAB531E0AD5E100E0D9CE /* overmapbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F43E1DFF620100A3B20B /* overmapbuffer.cpp */; };
+		438EAB541E0AD5E100E0D9CE /* player_activity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4491DFF620100A3B20B /* player_activity.cpp */; };
+		438EAB551E0AD5E100E0D9CE /* mondeath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4141DFF620100A3B20B /* mondeath.cpp */; };
+		438EAB561E0AD5E100E0D9CE /* monstergenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F41F1DFF620100A3B20B /* monstergenerator.cpp */; };
+		438EAB571E0AD5E100E0D9CE /* pickup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4441DFF620100A3B20B /* pickup.cpp */; };
+		438EAB581E0AD5E100E0D9CE /* event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3921DFF620000A3B20B /* event.cpp */; };
+		438EAB591E0AD5E100E0D9CE /* trap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F47B1DFF620100A3B20B /* trap.cpp */; };
+		438EAB5A1E0AD5E100E0D9CE /* monmove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F41C1DFF620100A3B20B /* monmove.cpp */; };
+		438EAB5B1E0AD5E100E0D9CE /* npcmove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4321DFF620100A3B20B /* npcmove.cpp */; };
+		438EAB5C1E0AD5E100E0D9CE /* speech.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F46D1DFF620100A3B20B /* speech.cpp */; };
+		438EAB5D1E0AD5E100E0D9CE /* martialarts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3FC1DFF620100A3B20B /* martialarts.cpp */; };
+		438EAB5E1E0AD5E100E0D9CE /* dependency_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3851DFF620000A3B20B /* dependency_tree.cpp */; };
+		438EAB5F1E0AD5E100E0D9CE /* bonuses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F34E1DFF620000A3B20B /* bonuses.cpp */; };
+		438EAB601E0AD5E100E0D9CE /* iuse_software_minesweeper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3D41DFF620100A3B20B /* iuse_software_minesweeper.cpp */; };
+		438EAB611E0AD5E100E0D9CE /* worldfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4A11DFF620100A3B20B /* worldfactory.cpp */; };
+		438EAB621E0AD5E100E0D9CE /* scenario.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4601DFF620100A3B20B /* scenario.cpp */; };
+		438EAB631E0AD5E100E0D9CE /* addiction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3391DFF620000A3B20B /* addiction.cpp */; };
+		438EAB641E0AD5E100E0D9CE /* monattack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4121DFF620100A3B20B /* monattack.cpp */; };
+		438EAB651E0AD5E100E0D9CE /* init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3B21DFF620000A3B20B /* init.cpp */; };
+		438EAB661E0AD5E100E0D9CE /* itype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3CA1DFF620000A3B20B /* itype.cpp */; };
+		438EAB671E0AD5E100E0D9CE /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3FE1DFF620100A3B20B /* material.cpp */; };
+		438EAB681E0AD5E100E0D9CE /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4471DFF620100A3B20B /* player.cpp */; };
+		438EAB691E0AD5E100E0D9CE /* help.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3AE1DFF620000A3B20B /* help.cpp */; };
+		438EAB6A1E0AD5E100E0D9CE /* ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4811DFF620100A3B20B /* ui.cpp */; };
+		438EAB6B1E0AD5E100E0D9CE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3E81DFF620100A3B20B /* main.cpp */; };
+		438EAB6C1E0AD5E100E0D9CE /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4901DFF620100A3B20B /* version.cpp */; };
+		438EAB6D1E0AD5E100E0D9CE /* harvest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3AC1DFF620000A3B20B /* harvest.cpp */; };
+		438EAB6E1E0AD5E100E0D9CE /* weather_gen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F49C1DFF620100A3B20B /* weather_gen.cpp */; };
+		438EAB6F1E0AD5E100E0D9CE /* monfaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4181DFF620100A3B20B /* monfaction.cpp */; };
+		438EAB701E0AD5E100E0D9CE /* requirements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4561DFF620100A3B20B /* requirements.cpp */; };
+		438EAB711E0AD5E100E0D9CE /* mapdata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3F21DFF620100A3B20B /* mapdata.cpp */; };
+		438EAB721E0AD5E100E0D9CE /* line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3DE1DFF620100A3B20B /* line.cpp */; };
+		438EAB731E0AD5E100E0D9CE /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3B71DFF620000A3B20B /* inventory.cpp */; };
+		438EAB741E0AD5E100E0D9CE /* mondefense.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4161DFF620100A3B20B /* mondefense.cpp */; };
+		438EAB751E0AD5E100E0D9CE /* bionics_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F34B1DFF620000A3B20B /* bionics_ui.cpp */; };
+		438EAB761E0AD5E100E0D9CE /* savegame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F45D1DFF620100A3B20B /* savegame.cpp */; };
+		438EAB771E0AD5E100E0D9CE /* iuse_software_sokoban.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3D81DFF620100A3B20B /* iuse_software_sokoban.cpp */; };
+		438EAB781E0AD5E100E0D9CE /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3A11DFF620000A3B20B /* game.cpp */; };
+		438EAB791E0AD5E100E0D9CE /* melee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4021DFF620100A3B20B /* melee.cpp */; };
+		438EAB7A1E0AD5E100E0D9CE /* simplexnoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4671DFF620100A3B20B /* simplexnoise.cpp */; };
+		438EAB7B1E0AD5E100E0D9CE /* wincurse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F49F1DFF620100A3B20B /* wincurse.cpp */; };
+		438EAB7C1E0AD5E100E0D9CE /* basecamp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3471DFF620000A3B20B /* basecamp.cpp */; };
+		438EAB7D1E0AD5E100E0D9CE /* crafting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3741DFF620000A3B20B /* crafting.cpp */; };
+		438EAB7E1E0AD5E100E0D9CE /* catacharset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3561DFF620000A3B20B /* catacharset.cpp */; };
+		438EAB7F1E0AD5E100E0D9CE /* item_location.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3C41DFF620000A3B20B /* item_location.cpp */; };
+		438EAB801E0AD5E100E0D9CE /* lightmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3DC1DFF620100A3B20B /* lightmap.cpp */; };
+		438EAB811E0AD5E100E0D9CE /* mapsharing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3FA1DFF620100A3B20B /* mapsharing.cpp */; };
+		438EAB821E0AD5E100E0D9CE /* iuse_software_snake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3D61DFF620100A3B20B /* iuse_software_snake.cpp */; };
+		438EAB831E0AD5E100E0D9CE /* clzones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3621DFF620000A3B20B /* clzones.cpp */; };
+		438EAB841E0AD5E100E0D9CE /* recipe_dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4541DFF620100A3B20B /* recipe_dictionary.cpp */; };
+		438EAB851E0AD5E100E0D9CE /* bionics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3491DFF620000A3B20B /* bionics.cpp */; };
+		438EAB861E0AD5E100E0D9CE /* calendar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3501DFF620000A3B20B /* calendar.cpp */; };
+		438EAB871E0AD5E100E0D9CE /* mod_manager_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4111DFF620100A3B20B /* mod_manager_ui.cpp */; };
+		438EAB881E0AD5E100E0D9CE /* main_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3E91DFF620100A3B20B /* main_menu.cpp */; };
+		438EAB891E0AD5E100E0D9CE /* npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F42D1DFF620100A3B20B /* npc.cpp */; };
+		438EAB8A1E0AD5E100E0D9CE /* mattack_actors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4001DFF620100A3B20B /* mattack_actors.cpp */; };
+		438EAB8B1E0AD5E100E0D9CE /* iuse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3CC1DFF620000A3B20B /* iuse.cpp */; };
+		438EAB8C1E0AD5E100E0D9CE /* rng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4591DFF620100A3B20B /* rng.cpp */; };
+		438EAB8D1E0AD5E100E0D9CE /* auto_pickup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3451DFF620000A3B20B /* auto_pickup.cpp */; };
+		438EAB8E1E0AD5E100E0D9CE /* turret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F47E1DFF620100A3B20B /* turret.cpp */; };
+		438EAB8F1E0AD5E100E0D9CE /* weather.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4991DFF620100A3B20B /* weather.cpp */; };
+		438EAB901E0AD5E100E0D9CE /* crafting_gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3761DFF620000A3B20B /* crafting_gui.cpp */; };
+		438EAB911E0AD5E100E0D9CE /* item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3BC1DFF620000A3B20B /* item.cpp */; };
+		438EAB921E0AD5E100E0D9CE /* ranged.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4531DFF620100A3B20B /* ranged.cpp */; };
+		438EAB931E0AD5E100E0D9CE /* veh_interact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4851DFF620100A3B20B /* veh_interact.cpp */; };
+		438EAB941E0AD5E100E0D9CE /* profession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F44F1DFF620100A3B20B /* profession.cpp */; };
+		438EAB951E0AD5E100E0D9CE /* path_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4401DFF620100A3B20B /* path_info.cpp */; };
+		438EAB961E0AD5E100E0D9CE /* mongroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F41A1DFF620100A3B20B /* mongroup.cpp */; };
+		438EAB971E0AD5E100E0D9CE /* item_action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3BE1DFF620000A3B20B /* item_action.cpp */; };
+		438EAB981E0AD5E100E0D9CE /* weather_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F49B1DFF620100A3B20B /* weather_data.cpp */; };
+		438EAB991E0AD5E100E0D9CE /* gamemode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3A61DFF620000A3B20B /* gamemode.cpp */; };
+		438EAB9A1E0AD5E100E0D9CE /* activity_handlers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3361DFF620000A3B20B /* activity_handlers.cpp */; };
+		438EAB9B1E0AD5E100E0D9CE /* cata_utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3541DFF620000A3B20B /* cata_utility.cpp */; };
+		438EAB9C1E0AD5E100E0D9CE /* overmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F43B1DFF620100A3B20B /* overmap.cpp */; };
+		438EAB9D1E0AD5E100E0D9CE /* artifact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3421DFF620000A3B20B /* artifact.cpp */; };
+		438EAB9E1E0AD5E100E0D9CE /* defense.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3841DFF620000A3B20B /* defense.cpp */; };
+		438EAB9F1E0AD5E100E0D9CE /* vehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4891DFF620100A3B20B /* vehicle.cpp */; };
+		438EABA01E0AD5E100E0D9CE /* item_stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3C81DFF620000A3B20B /* item_stack.cpp */; };
+		438EABA11E0AD5E100E0D9CE /* mapgen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3F41DFF620100A3B20B /* mapgen.cpp */; };
+		438EABA21E0AD5E100E0D9CE /* explosion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3941DFF620000A3B20B /* explosion.cpp */; };
+		438EABA31E0AD5E100E0D9CE /* activity_item_handling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3381DFF620000A3B20B /* activity_item_handling.cpp */; };
+		438EABA41E0AD5E100E0D9CE /* field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F39A1DFF620000A3B20B /* field.cpp */; };
+		438EABA51E0AD5E100E0D9CE /* mod_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F40F1DFF620100A3B20B /* mod_manager.cpp */; };
+		438EABA61E0AD5E100E0D9CE /* iuse_software.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F3D01DFF620100A3B20B /* iuse_software.cpp */; };
+		438EABA71E0AD5E100E0D9CE /* tutorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F47F1DFF620100A3B20B /* tutorial.cpp */; };
+		438EABA81E0AD5E100E0D9CE /* dump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F38A1DFF620000A3B20B /* dump.cpp */; };
+		438EABA91E0AD5E100E0D9CE /* messages.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4381F4031DFF620100A3B20B /* messages.cpp */; };
+		438EABAB1E0AD5E100E0D9CE /* libintl.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4341B2DB1E06B73A00CF3106 /* libintl.8.dylib */; };
+		438EABAC1E0AD5E100E0D9CE /* liblua.5.2.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4341B2DC1E06B73A00CF3106 /* liblua.5.2.4.dylib */; };
+		438EABB31E0AD5E100E0D9CE /* lua in Resources */ = {isa = PBXBuildFile; fileRef = 4381FEE71DFF6A1F00A3B20B /* lua */; };
+		438EABB51E0AD5E100E0D9CE /* libintl.8.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4341B2DB1E06B73A00CF3106 /* libintl.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		438EABB61E0AD5E100E0D9CE /* liblua.5.2.4.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4341B2DC1E06B73A00CF3106 /* liblua.5.2.4.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		438EABC21E0ADA2900E0D9CE /* libncurses.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 438EABC11E0ADA2900E0D9CE /* libncurses.5.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -229,6 +414,17 @@
 				4341B2E71E06F72300CF3106 /* SDL2_mixer.framework in CopyFiles */,
 				4341B2E81E06F72300CF3106 /* SDL2_ttf.framework in CopyFiles */,
 				4341B2E91E06F72300CF3106 /* SDL2.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438EABB41E0AD5E100E0D9CE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				438EABB51E0AD5E100E0D9CE /* libintl.8.dylib in CopyFiles */,
+				438EABB61E0AD5E100E0D9CE /* liblua.5.2.4.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +805,8 @@
 		4381FEC91DFF69C400A3B20B /* gfx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gfx; path = ../gfx; sourceTree = SOURCE_ROOT; };
 		4381FECB1DFF69CC00A3B20B /* lang */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lang; path = ../lang; sourceTree = SOURCE_ROOT; };
 		4381FEE71DFF6A1F00A3B20B /* lua */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lua; path = ../lua; sourceTree = SOURCE_ROOT; };
+		438EABBF1E0AD5E100E0D9CE /* Cataclysm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cataclysm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		438EABC11E0ADA2900E0D9CE /* libncurses.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libncurses.5.tbd; path = usr/lib/libncurses.5.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -622,6 +820,16 @@
 				4381F5641DFF66A700A3B20B /* SDL2_mixer.framework in Frameworks */,
 				4381F5651DFF66A700A3B20B /* SDL2_ttf.framework in Frameworks */,
 				4381F5661DFF66A700A3B20B /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438EABAA1E0AD5E100E0D9CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438EABC21E0ADA2900E0D9CE /* libncurses.5.tbd in Frameworks */,
+				438EABAB1E0AD5E100E0D9CE /* libintl.8.dylib in Frameworks */,
+				438EABAC1E0AD5E100E0D9CE /* liblua.5.2.4.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +850,7 @@
 			isa = PBXGroup;
 			children = (
 				4381E74F1DFF606900A3B20B /* Cataclysm.app */,
+				438EABBF1E0AD5E100E0D9CE /* Cataclysm.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1031,6 +1240,7 @@
 		4388A2F71E000ECF008F29D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				438EABC11E0ADA2900E0D9CE /* libncurses.5.tbd */,
 				4341B2DB1E06B73A00CF3106 /* libintl.8.dylib */,
 				4341B2DC1E06B73A00CF3106 /* liblua.5.2.4.dylib */,
 				4381F55F1DFF66A700A3B20B /* SDL2_image.framework */,
@@ -1062,6 +1272,26 @@
 			name = "Cataclysm-Tiles";
 			productName = Cataclysm;
 			productReference = 4381E74F1DFF606900A3B20B /* Cataclysm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		438EAAF41E0AD5E100E0D9CE /* Cataclysm-Curses */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438EABBC1E0AD5E100E0D9CE /* Build configuration list for PBXNativeTarget "Cataclysm-Curses" */;
+			buildPhases = (
+				438EAAF51E0AD5E100E0D9CE /* Set Version */,
+				438EAAF61E0AD5E100E0D9CE /* Sources */,
+				438EABAA1E0AD5E100E0D9CE /* Frameworks */,
+				438EABB11E0AD5E100E0D9CE /* Resources */,
+				438EABB41E0AD5E100E0D9CE /* CopyFiles */,
+				438EABBB1E0AD5E100E0D9CE /* Post Build */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cataclysm-Curses";
+			productName = Cataclysm;
+			productReference = 438EABBF1E0AD5E100E0D9CE /* Cataclysm.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1096,6 +1326,7 @@
 			projectRoot = "";
 			targets = (
 				4381E74E1DFF606900A3B20B /* Cataclysm-Tiles */,
+				438EAAF41E0AD5E100E0D9CE /* Cataclysm-Curses */,
 				4388A3311E004184008F29D6 /* Cataclysm.dmg */,
 			);
 		};
@@ -1108,6 +1339,14 @@
 			files = (
 				4388A2FD1E003A98008F29D6 /* gfx in Resources */,
 				4388A2FE1E003AA0008F29D6 /* lua in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438EABB11E0AD5E100E0D9CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438EABB31E0AD5E100E0D9CE /* lua in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1126,11 +1365,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/sh -x";
-			shellScript = "APPBASEDIR=$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\nAPPCONTENTSDIR=$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH\nAPPRESOURCESDIR=$APPCONTENTSDIR/Resources\nAPPFRAMEWORKSDIR=$TARGET_BUILD_DIR/$FRAMEWORKS_FOLDER_PATH\nAPPTARGETDIR=$TARGET_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\nAPPDATADIR=$APPRESOURCESDIR/data\nAPPTARGET=$TARGET_BUILD_DIR/$EXECUTABLE_PATH\n\nBASEDIR=$SRCROOT/..\nBASEDATADIR=$BASEDIR/data\nFRAMEWORKSDIR=/Library/Frameworks\n\nmkdir -p $APPDATADIR/\n\npushd $BASEDIR/lang/\n./compile_mo.sh all\npopd\n\ncp -f $BASEDATADIR/osx/Cataclysm.sh $APPTARGETDIR/\ncp -f $BASEDATADIR/osx/AppIcon.icns $APPRESOURCESDIR/\ncp -f $BASEDATADIR/fontdata.json $APPDATADIR/\ncp -fR $BASEDATADIR/core $APPDATADIR/\ncp -fR $BASEDATADIR/font $APPDATADIR/\ncp -fR $BASEDATADIR/json $APPDATADIR/\ncp -fR $BASEDATADIR/mods $APPDATADIR/\ncp -fR $BASEDATADIR/names $APPDATADIR/\ncp -fR $BASEDATADIR/raw $APPDATADIR/\ncp -fR $BASEDATADIR/recycling $APPDATADIR/\ncp -fR $BASEDATADIR/motd $APPDATADIR/\ncp -fR $BASEDATADIR/credits $APPDATADIR/\ncp -fR $BASEDATADIR/title $APPDATADIR/\nmkdir -p $APPRESOURCESDIR/lang/mo/\ncp -fpR $BASEDIR/lang/mo/ $APPRESOURCESDIR/lang/mo/\ncp -fR $BASEDATADIR/sound $APPDATADIR/\n\ncd $APPFRAMEWORKSDIR && ln -fs SDL2_mixer.framework/Frameworks/Vorbis.framework Vorbis.framework\ncd $APPFRAMEWORKSDIR && ln -fs SDL2_mixer.framework/Frameworks/Ogg.framework Ogg.framework\ncd $APPFRAMEWORKSDIR/SDL2_mixer.framework/Frameworks && find . -maxdepth 1 -type d -not -name '*Vorbis.framework' -not -name '*Ogg.framework' -not -name '.' | xargs rm -rf\n\nfor lib in `otool -L $APPTARGET | grep .dylib | sed -n 's/\\(.*\\.dylib\\).*/\\1/p' | grep -v /usr/lib/`; do install_name_tool -change $lib @rpath/`basename $lib` $APPTARGET; done;\n\nmv $APPTARGET $APPTARGETDIR/cataclysm-tiles\n\nif [[ \"$CONFIGURATION\" == \"Debug\" ]]\nthen\n    rm $APPTARGETDIR/Cataclysm.sh\n    ln -s $APPTARGETDIR/cataclysm-tiles $APPTARGETDIR/Cataclysm.sh\nfi";
+			shellScript = "VARIANT=\"-tiles\"\nAPPBASEDIR=$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\nAPPCONTENTSDIR=$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH\nAPPRESOURCESDIR=$APPCONTENTSDIR/Resources\nAPPFRAMEWORKSDIR=$TARGET_BUILD_DIR/$FRAMEWORKS_FOLDER_PATH\nAPPTARGETDIR=$TARGET_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\nAPPDATADIR=$APPRESOURCESDIR/data\nAPPTARGET=$TARGET_BUILD_DIR/$EXECUTABLE_PATH\n\nBASEDIR=$SRCROOT/..\nBASEDATADIR=$BASEDIR/data\nFRAMEWORKSDIR=/Library/Frameworks\n\nmkdir -p $APPDATADIR/\n\npushd $BASEDIR/lang/\n./compile_mo.sh all\npopd\n\ncp -f $BASEDATADIR/osx/Cataclysm.sh $APPTARGETDIR/\ncp -f $BASEDATADIR/osx/AppIcon.icns $APPRESOURCESDIR/\ncp -f $BASEDATADIR/fontdata.json $APPDATADIR/\ncp -fR $BASEDATADIR/core $APPDATADIR/\ncp -fR $BASEDATADIR/font $APPDATADIR/\ncp -fR $BASEDATADIR/json $APPDATADIR/\ncp -fR $BASEDATADIR/mods $APPDATADIR/\ncp -fR $BASEDATADIR/names $APPDATADIR/\ncp -fR $BASEDATADIR/raw $APPDATADIR/\ncp -fR $BASEDATADIR/recycling $APPDATADIR/\ncp -fR $BASEDATADIR/motd $APPDATADIR/\ncp -fR $BASEDATADIR/credits $APPDATADIR/\ncp -fR $BASEDATADIR/title $APPDATADIR/\nmkdir -p $APPRESOURCESDIR/lang/mo/\ncp -fpR $BASEDIR/lang/mo/ $APPRESOURCESDIR/lang/mo/\n\nif [[ -n \"$VARIANT\" ]]\nthen\n    cp -fR $BASEDATADIR/sound $APPDATADIR/\n    cd $APPFRAMEWORKSDIR && ln -fs SDL2_mixer.framework/Frameworks/Vorbis.framework Vorbis.framework\n    cd $APPFRAMEWORKSDIR && ln -fs SDL2_mixer.framework/Frameworks/Ogg.framework Ogg.framework\n    cd $APPFRAMEWORKSDIR/SDL2_mixer.framework/Frameworks && find . -maxdepth 1 -type d -not -name '*Vorbis.framework' -not -name '*Ogg.framework' -not -name '.' | xargs rm -rf\nfi\nfor lib in `otool -L $APPTARGET | grep .dylib | sed -n 's/\\(.*\\.dylib\\).*/\\1/p' | grep -v /usr/lib/`; do install_name_tool -change $lib @rpath/`basename $lib` $APPTARGET; done;\n\nmv $APPTARGET $APPTARGETDIR/cataclysm$VARIANT\n\nif [[ \"$CONFIGURATION\" == \"Debug\" && -n \"$VARIANT\" ]]\nthen\n    rm $APPTARGETDIR/Cataclysm.sh\n    ln -s $APPTARGETDIR/cataclysm-tiles $APPTARGETDIR/Cataclysm.sh\nfi";
 		};
 		4341B2DF1E06B7F600CF3106 /* Set Version */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -1138,7 +1377,7 @@
 			name = "Set Version";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/sh -x";
 			shellScript = "BASEDIR=$SRCROOT/..\npushd $BASEDIR\nSRC_DIR=src\n\nVERSION_STRING=`git describe --tags --always --dirty --match \"[0-9A-Z]*.[0-9A-Z]*\"`\nOLDVERSION=`grep VERSION $SRC_DIR/version.h|cut -d '\"' -f2`\nif [ \"x$VERSION_STRING\" != \"x$OLDVERSION\" ]; then echo \"#define VERSION \\\"$VERSION_STRING\\\"\" | tee $SRC_DIR/version.h ; fi;\npopd\nSHORT_VERSION_STRING=`echo $VERSION_STRING | cut -d '-' -f1`\n\n#/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $VERSION_STRING\" $TARGET_BUILD_DIR/$INFOPLIST_PATH\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $VERSION_STRING\" $TARGET_BUILD_DIR/$INFOPLIST_PATH";
 		};
@@ -1154,6 +1393,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "BASEDIR=$SRCROOT/..\nif [ ! -d \"$TARGET_BUILD_DIR/Cataclysm.app/\" ]; then echo \"Build Cataclysm first\"; exit 1; fi;\n\ncd $TARGET_BUILD_DIR/\nrm -rf Cataclysm/\nmkdir -p Cataclysm/\ncp -a Cataclysm.app/ Cataclysm/Cataclysm.app\ncp $BASEDIR/data/osx/DS_Store Cataclysm/.DS_Store\ncp $BASEDIR/data/osx/dmgback.png Cataclysm/.background.png\nln -s /Applications Cataclysm/Applications\n\nhdiutil create -ov -fs HFS+ -format \"UDBZ\" -volname \"Cataclysm DDA\" -srcfolder \\\n\"Cataclysm/\" \"Cataclysm.dmg\"\n\nrm -rf Cataclysm/";
+		};
+		438EAAF51E0AD5E100E0D9CE /* Set Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/sh -x";
+			shellScript = "BASEDIR=$SRCROOT/..\npushd $BASEDIR\nSRC_DIR=src\n\nVERSION_STRING=`git describe --tags --always --dirty --match \"[0-9A-Z]*.[0-9A-Z]*\"`\nOLDVERSION=`grep VERSION $SRC_DIR/version.h|cut -d '\"' -f2`\nif [ \"x$VERSION_STRING\" != \"x$OLDVERSION\" ]; then echo \"#define VERSION \\\"$VERSION_STRING\\\"\" | tee $SRC_DIR/version.h ; fi;\npopd\nSHORT_VERSION_STRING=`echo $VERSION_STRING | cut -d '-' -f1`\n\n#/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $VERSION_STRING\" $TARGET_BUILD_DIR/$INFOPLIST_PATH\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $VERSION_STRING\" $TARGET_BUILD_DIR/$INFOPLIST_PATH";
+		};
+		438EABBB1E0AD5E100E0D9CE /* Post Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Post Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/sh -x";
+			shellScript = "VARIANT=\"\"\nAPPBASEDIR=$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\nAPPCONTENTSDIR=$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH\nAPPRESOURCESDIR=$APPCONTENTSDIR/Resources\nAPPFRAMEWORKSDIR=$TARGET_BUILD_DIR/$FRAMEWORKS_FOLDER_PATH\nAPPTARGETDIR=$TARGET_BUILD_DIR/$EXECUTABLE_FOLDER_PATH\nAPPDATADIR=$APPRESOURCESDIR/data\nAPPTARGET=$TARGET_BUILD_DIR/$EXECUTABLE_PATH\n\nBASEDIR=$SRCROOT/..\nBASEDATADIR=$BASEDIR/data\nFRAMEWORKSDIR=/Library/Frameworks\n\nmkdir -p $APPDATADIR/\n\npushd $BASEDIR/lang/\n./compile_mo.sh all\npopd\n\ncp -f $BASEDATADIR/osx/Cataclysm.sh $APPTARGETDIR/\ncp -f $BASEDATADIR/osx/AppIcon.icns $APPRESOURCESDIR/\ncp -f $BASEDATADIR/fontdata.json $APPDATADIR/\ncp -fR $BASEDATADIR/core $APPDATADIR/\ncp -fR $BASEDATADIR/font $APPDATADIR/\ncp -fR $BASEDATADIR/json $APPDATADIR/\ncp -fR $BASEDATADIR/mods $APPDATADIR/\ncp -fR $BASEDATADIR/names $APPDATADIR/\ncp -fR $BASEDATADIR/raw $APPDATADIR/\ncp -fR $BASEDATADIR/recycling $APPDATADIR/\ncp -fR $BASEDATADIR/motd $APPDATADIR/\ncp -fR $BASEDATADIR/credits $APPDATADIR/\ncp -fR $BASEDATADIR/title $APPDATADIR/\nmkdir -p $APPRESOURCESDIR/lang/mo/\ncp -fpR $BASEDIR/lang/mo/ $APPRESOURCESDIR/lang/mo/\n\nif [[ -n \"$VARIANT\" ]]\nthen\ncp -fR $BASEDATADIR/sound $APPDATADIR/\ncd $APPFRAMEWORKSDIR && ln -fs SDL2_mixer.framework/Frameworks/Vorbis.framework Vorbis.framework\ncd $APPFRAMEWORKSDIR && ln -fs SDL2_mixer.framework/Frameworks/Ogg.framework Ogg.framework\ncd $APPFRAMEWORKSDIR/SDL2_mixer.framework/Frameworks && find . -maxdepth 1 -type d -not -name '*Vorbis.framework' -not -name '*Ogg.framework' -not -name '.' | xargs rm -rf\nfi\nfor lib in `otool -L $APPTARGET | grep .dylib | sed -n 's/\\(.*\\.dylib\\).*/\\1/p' | grep -v /usr/lib/`; do install_name_tool -change $lib @rpath/`basename $lib` $APPTARGET; done;\n\nmv $APPTARGET $APPTARGETDIR/cataclysm$VARIANT\n\nif [[ \"$CONFIGURATION\" == \"Debug\" && -n \"$VARIANT\" ]]\nthen\nrm $APPTARGETDIR/Cataclysm.sh\nln -s $APPTARGETDIR/cataclysm-tiles $APPTARGETDIR/Cataclysm.sh\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1344,6 +1611,192 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		438EAAF61E0AD5E100E0D9CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438EAAF71E0AD5E100E0D9CE /* emit.cpp in Sources */,
+				438EAAF81E0AD5E100E0D9CE /* skill.cpp in Sources */,
+				438EAAF91E0AD5E100E0D9CE /* vehicle_group.cpp in Sources */,
+				438EAAFA1E0AD5E100E0D9CE /* mutation_data.cpp in Sources */,
+				438EAAFB1E0AD5E100E0D9CE /* vitamin.cpp in Sources */,
+				438EAAFC1E0AD5E100E0D9CE /* submap.cpp in Sources */,
+				438EAAFD1E0AD5E100E0D9CE /* start_location.cpp in Sources */,
+				438EAAFE1E0AD5E100E0D9CE /* construction.cpp in Sources */,
+				438EAAFF1E0AD5E100E0D9CE /* json.cpp in Sources */,
+				438EAB001E0AD5E100E0D9CE /* creature.cpp in Sources */,
+				438EAB011E0AD5E100E0D9CE /* debug_menu.cpp in Sources */,
+				438EAB021E0AD5E100E0D9CE /* iuse_software_kitten.cpp in Sources */,
+				438EAB031E0AD5E100E0D9CE /* mission.cpp in Sources */,
+				438EAB041E0AD5E100E0D9CE /* savegame_json.cpp in Sources */,
+				438EAB051E0AD5E100E0D9CE /* color.cpp in Sources */,
+				438EAB061E0AD5E100E0D9CE /* savegame_legacy.cpp in Sources */,
+				438EAB071E0AD5E100E0D9CE /* iuse_actor.cpp in Sources */,
+				438EAB081E0AD5E100E0D9CE /* mutation.cpp in Sources */,
+				438EAB091E0AD5E100E0D9CE /* filesystem.cpp in Sources */,
+				438EAB0A1E0AD5E100E0D9CE /* projectile.cpp in Sources */,
+				438EAB0B1E0AD5E100E0D9CE /* name.cpp in Sources */,
+				438EAB0C1E0AD5E100E0D9CE /* overlay_ordering.cpp in Sources */,
+				438EAB0D1E0AD5E100E0D9CE /* options.cpp in Sources */,
+				438EAB0E1E0AD5E100E0D9CE /* morale.cpp in Sources */,
+				438EAB0F1E0AD5E100E0D9CE /* char_validity_check.cpp in Sources */,
+				438EAB101E0AD5E100E0D9CE /* coordinate_conversions.cpp in Sources */,
+				438EAB111E0AD5E100E0D9CE /* catalua.cpp in Sources */,
+				438EAB121E0AD5E100E0D9CE /* trapfunc.cpp in Sources */,
+				438EAB131E0AD5E100E0D9CE /* safemode_ui.cpp in Sources */,
+				438EAB141E0AD5E100E0D9CE /* fault.cpp in Sources */,
+				438EAB151E0AD5E100E0D9CE /* output.cpp in Sources */,
+				438EAB161E0AD5E100E0D9CE /* computer.cpp in Sources */,
+				438EAB171E0AD5E100E0D9CE /* inventory_ui.cpp in Sources */,
+				438EAB181E0AD5E100E0D9CE /* action.cpp in Sources */,
+				438EAB191E0AD5E100E0D9CE /* visitable.cpp in Sources */,
+				438EAB1A1E0AD5E100E0D9CE /* mission_ui.cpp in Sources */,
+				438EAB1B1E0AD5E100E0D9CE /* mission_place.cpp in Sources */,
+				438EAB1C1E0AD5E100E0D9CE /* monster.cpp in Sources */,
+				438EAB1D1E0AD5E100E0D9CE /* mission_fail.cpp in Sources */,
+				438EAB1E1E0AD5E100E0D9CE /* map_selector.cpp in Sources */,
+				438EAB1F1E0AD5E100E0D9CE /* bodypart.cpp in Sources */,
+				438EAB201E0AD5E100E0D9CE /* debug.cpp in Sources */,
+				438EAB211E0AD5E100E0D9CE /* drawing_primitives.cpp in Sources */,
+				438EAB221E0AD5E100E0D9CE /* active_item_cache.cpp in Sources */,
+				438EAB231E0AD5E100E0D9CE /* mtype.cpp in Sources */,
+				438EAB241E0AD5E100E0D9CE /* mission_companion.cpp in Sources */,
+				438EAB251E0AD5E100E0D9CE /* consumption.cpp in Sources */,
+				438EAB261E0AD5E100E0D9CE /* item_factory.cpp in Sources */,
+				438EAB271E0AD5E100E0D9CE /* item_search.cpp in Sources */,
+				438EAB281E0AD5E100E0D9CE /* text_snippets.cpp in Sources */,
+				438EAB291E0AD5E100E0D9CE /* wish.cpp in Sources */,
+				438EAB2A1E0AD5E100E0D9CE /* scent_map.cpp in Sources */,
+				438EAB2B1E0AD5E100E0D9CE /* game_inventory.cpp in Sources */,
+				438EAB2C1E0AD5E100E0D9CE /* ammo.cpp in Sources */,
+				438EAB2D1E0AD5E100E0D9CE /* newcharacter.cpp in Sources */,
+				438EAB2E1E0AD5E100E0D9CE /* animation.cpp in Sources */,
+				438EAB2F1E0AD5E100E0D9CE /* cata_tiles.cpp in Sources */,
+				438EAB301E0AD5E100E0D9CE /* translations.cpp in Sources */,
+				438EAB311E0AD5E100E0D9CE /* armor_layers.cpp in Sources */,
+				438EAB321E0AD5E100E0D9CE /* posix_time.cpp in Sources */,
+				438EAB331E0AD5E100E0D9CE /* mapgenformat.cpp in Sources */,
+				438EAB341E0AD5E100E0D9CE /* editmap.cpp in Sources */,
+				438EAB351E0AD5E100E0D9CE /* mission_start.cpp in Sources */,
+				438EAB361E0AD5E100E0D9CE /* lua_console.cpp in Sources */,
+				438EAB371E0AD5E100E0D9CE /* item_group.cpp in Sources */,
+				438EAB381E0AD5E100E0D9CE /* vehicle_selector.cpp in Sources */,
+				438EAB391E0AD5E100E0D9CE /* tileray.cpp in Sources */,
+				438EAB3A1E0AD5E100E0D9CE /* npctalk.cpp in Sources */,
+				438EAB3B1E0AD5E100E0D9CE /* mapgen_functions.cpp in Sources */,
+				438EAB3C1E0AD5E100E0D9CE /* gates.cpp in Sources */,
+				438EAB3D1E0AD5E100E0D9CE /* sounds.cpp in Sources */,
+				438EAB3E1E0AD5E100E0D9CE /* advanced_inv.cpp in Sources */,
+				438EAB3F1E0AD5E100E0D9CE /* missiondef.cpp in Sources */,
+				438EAB401E0AD5E100E0D9CE /* faction.cpp in Sources */,
+				438EAB411E0AD5E100E0D9CE /* npc_class.cpp in Sources */,
+				438EAB421E0AD5E100E0D9CE /* mutation_ui.cpp in Sources */,
+				438EAB431E0AD5E100E0D9CE /* map.cpp in Sources */,
+				438EAB441E0AD5E100E0D9CE /* sdltiles.cpp in Sources */,
+				438EAB451E0AD5E100E0D9CE /* cursesport.cpp in Sources */,
+				438EAB461E0AD5E100E0D9CE /* effect.cpp in Sources */,
+				438EAB471E0AD5E100E0D9CE /* live_view.cpp in Sources */,
+				438EAB481E0AD5E100E0D9CE /* damage.cpp in Sources */,
+				438EAB491E0AD5E100E0D9CE /* craft_command.cpp in Sources */,
+				438EAB4A1E0AD5E100E0D9CE /* flag.cpp in Sources */,
+				438EAB4B1E0AD5E100E0D9CE /* iexamine.cpp in Sources */,
+				438EAB4C1E0AD5E100E0D9CE /* mission_end.cpp in Sources */,
+				438EAB4D1E0AD5E100E0D9CE /* pathfinding.cpp in Sources */,
+				438EAB4E1E0AD5E100E0D9CE /* veh_type.cpp in Sources */,
+				438EAB4F1E0AD5E100E0D9CE /* character.cpp in Sources */,
+				438EAB501E0AD5E100E0D9CE /* creature_tracker.cpp in Sources */,
+				438EAB511E0AD5E100E0D9CE /* input.cpp in Sources */,
+				438EAB521E0AD5E100E0D9CE /* mapbuffer.cpp in Sources */,
+				438EAB531E0AD5E100E0D9CE /* overmapbuffer.cpp in Sources */,
+				438EAB541E0AD5E100E0D9CE /* player_activity.cpp in Sources */,
+				438EAB551E0AD5E100E0D9CE /* mondeath.cpp in Sources */,
+				438EAB561E0AD5E100E0D9CE /* monstergenerator.cpp in Sources */,
+				438EAB571E0AD5E100E0D9CE /* pickup.cpp in Sources */,
+				438EAB581E0AD5E100E0D9CE /* event.cpp in Sources */,
+				438EAB591E0AD5E100E0D9CE /* trap.cpp in Sources */,
+				438EAB5A1E0AD5E100E0D9CE /* monmove.cpp in Sources */,
+				438EAB5B1E0AD5E100E0D9CE /* npcmove.cpp in Sources */,
+				438EAB5C1E0AD5E100E0D9CE /* speech.cpp in Sources */,
+				438EAB5D1E0AD5E100E0D9CE /* martialarts.cpp in Sources */,
+				438EAB5E1E0AD5E100E0D9CE /* dependency_tree.cpp in Sources */,
+				438EAB5F1E0AD5E100E0D9CE /* bonuses.cpp in Sources */,
+				438EAB601E0AD5E100E0D9CE /* iuse_software_minesweeper.cpp in Sources */,
+				438EAB611E0AD5E100E0D9CE /* worldfactory.cpp in Sources */,
+				438EAB621E0AD5E100E0D9CE /* scenario.cpp in Sources */,
+				438EAB631E0AD5E100E0D9CE /* addiction.cpp in Sources */,
+				438EAB641E0AD5E100E0D9CE /* monattack.cpp in Sources */,
+				438EAB651E0AD5E100E0D9CE /* init.cpp in Sources */,
+				438EAB661E0AD5E100E0D9CE /* itype.cpp in Sources */,
+				438EAB671E0AD5E100E0D9CE /* material.cpp in Sources */,
+				438EAB681E0AD5E100E0D9CE /* player.cpp in Sources */,
+				438EAB691E0AD5E100E0D9CE /* help.cpp in Sources */,
+				438EAB6A1E0AD5E100E0D9CE /* ui.cpp in Sources */,
+				438EAB6B1E0AD5E100E0D9CE /* main.cpp in Sources */,
+				438EAB6C1E0AD5E100E0D9CE /* version.cpp in Sources */,
+				438EAB6D1E0AD5E100E0D9CE /* harvest.cpp in Sources */,
+				438EAB6E1E0AD5E100E0D9CE /* weather_gen.cpp in Sources */,
+				438EAB6F1E0AD5E100E0D9CE /* monfaction.cpp in Sources */,
+				438EAB701E0AD5E100E0D9CE /* requirements.cpp in Sources */,
+				438EAB711E0AD5E100E0D9CE /* mapdata.cpp in Sources */,
+				438EAB721E0AD5E100E0D9CE /* line.cpp in Sources */,
+				438EAB731E0AD5E100E0D9CE /* inventory.cpp in Sources */,
+				438EAB741E0AD5E100E0D9CE /* mondefense.cpp in Sources */,
+				438EAB751E0AD5E100E0D9CE /* bionics_ui.cpp in Sources */,
+				438EAB761E0AD5E100E0D9CE /* savegame.cpp in Sources */,
+				438EAB771E0AD5E100E0D9CE /* iuse_software_sokoban.cpp in Sources */,
+				438EAB781E0AD5E100E0D9CE /* game.cpp in Sources */,
+				438EAB791E0AD5E100E0D9CE /* melee.cpp in Sources */,
+				438EAB7A1E0AD5E100E0D9CE /* simplexnoise.cpp in Sources */,
+				438EAB7B1E0AD5E100E0D9CE /* wincurse.cpp in Sources */,
+				438EAB7C1E0AD5E100E0D9CE /* basecamp.cpp in Sources */,
+				438EAB7D1E0AD5E100E0D9CE /* crafting.cpp in Sources */,
+				438EAB7E1E0AD5E100E0D9CE /* catacharset.cpp in Sources */,
+				438EAB7F1E0AD5E100E0D9CE /* item_location.cpp in Sources */,
+				438EAB801E0AD5E100E0D9CE /* lightmap.cpp in Sources */,
+				438EAB811E0AD5E100E0D9CE /* mapsharing.cpp in Sources */,
+				438EAB821E0AD5E100E0D9CE /* iuse_software_snake.cpp in Sources */,
+				438EAB831E0AD5E100E0D9CE /* clzones.cpp in Sources */,
+				438EAB841E0AD5E100E0D9CE /* recipe_dictionary.cpp in Sources */,
+				438EAB851E0AD5E100E0D9CE /* bionics.cpp in Sources */,
+				438EAB861E0AD5E100E0D9CE /* calendar.cpp in Sources */,
+				438EAB871E0AD5E100E0D9CE /* mod_manager_ui.cpp in Sources */,
+				438EAB881E0AD5E100E0D9CE /* main_menu.cpp in Sources */,
+				438EAB891E0AD5E100E0D9CE /* npc.cpp in Sources */,
+				438EAB8A1E0AD5E100E0D9CE /* mattack_actors.cpp in Sources */,
+				438EAB8B1E0AD5E100E0D9CE /* iuse.cpp in Sources */,
+				438EAB8C1E0AD5E100E0D9CE /* rng.cpp in Sources */,
+				438EAB8D1E0AD5E100E0D9CE /* auto_pickup.cpp in Sources */,
+				438EAB8E1E0AD5E100E0D9CE /* turret.cpp in Sources */,
+				438EAB8F1E0AD5E100E0D9CE /* weather.cpp in Sources */,
+				438EAB901E0AD5E100E0D9CE /* crafting_gui.cpp in Sources */,
+				438EAB911E0AD5E100E0D9CE /* item.cpp in Sources */,
+				438EAB921E0AD5E100E0D9CE /* ranged.cpp in Sources */,
+				438EAB931E0AD5E100E0D9CE /* veh_interact.cpp in Sources */,
+				438EAB941E0AD5E100E0D9CE /* profession.cpp in Sources */,
+				438EAB951E0AD5E100E0D9CE /* path_info.cpp in Sources */,
+				438EAB961E0AD5E100E0D9CE /* mongroup.cpp in Sources */,
+				438EAB971E0AD5E100E0D9CE /* item_action.cpp in Sources */,
+				438EAB981E0AD5E100E0D9CE /* weather_data.cpp in Sources */,
+				438EAB991E0AD5E100E0D9CE /* gamemode.cpp in Sources */,
+				438EAB9A1E0AD5E100E0D9CE /* activity_handlers.cpp in Sources */,
+				438EAB9B1E0AD5E100E0D9CE /* cata_utility.cpp in Sources */,
+				438EAB9C1E0AD5E100E0D9CE /* overmap.cpp in Sources */,
+				438EAB9D1E0AD5E100E0D9CE /* artifact.cpp in Sources */,
+				438EAB9E1E0AD5E100E0D9CE /* defense.cpp in Sources */,
+				438EAB9F1E0AD5E100E0D9CE /* vehicle.cpp in Sources */,
+				438EABA01E0AD5E100E0D9CE /* item_stack.cpp in Sources */,
+				438EABA11E0AD5E100E0D9CE /* mapgen.cpp in Sources */,
+				438EABA21E0AD5E100E0D9CE /* explosion.cpp in Sources */,
+				438EABA31E0AD5E100E0D9CE /* activity_item_handling.cpp in Sources */,
+				438EABA41E0AD5E100E0D9CE /* field.cpp in Sources */,
+				438EABA51E0AD5E100E0D9CE /* mod_manager.cpp in Sources */,
+				438EABA61E0AD5E100E0D9CE /* iuse_software.cpp in Sources */,
+				438EABA71E0AD5E100E0D9CE /* tutorial.cpp in Sources */,
+				438EABA81E0AD5E100E0D9CE /* dump.cpp in Sources */,
+				438EABA91E0AD5E100E0D9CE /* messages.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -1395,13 +1848,10 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
-					"-DXCODE",
 					"-DGIT_VERSION",
-					"-DTILES",
 					"-DLOCALIZE",
 					"-DUSE_HOME_DIR",
 					"-DMACOSX",
-					"-DSDL_SOUND",
 					"-DLUA",
 				);
 				SDKROOT = macosx;
@@ -1450,13 +1900,10 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = (
-					"-DXCODE",
 					"-DGIT_VERSION",
-					"-DTILES",
 					"-DLOCALIZE",
 					"-DUSE_HOME_DIR",
 					"-DMACOSX",
-					"-DSDL_SOUND",
 					"-DLUA",
 					"-DRELEASE",
 				);
@@ -1474,6 +1921,15 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = (
+					"-DGIT_VERSION",
+					"-DLOCALIZE",
+					"-DUSE_HOME_DIR",
+					"-DMACOSX",
+					"-DLUA",
+					"-DSDL_SOUND",
+					"-DTILES",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.CleverRaven.Cataclysm;
 				PRODUCT_NAME = Cataclysm;
 			};
@@ -1489,6 +1945,16 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = (
+					"-DGIT_VERSION",
+					"-DLOCALIZE",
+					"-DUSE_HOME_DIR",
+					"-DMACOSX",
+					"-DLUA",
+					"-DRELEASE",
+					"-DSDL_TILES",
+					"-DTILES",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.CleverRaven.Cataclysm;
 				PRODUCT_NAME = Cataclysm;
 			};
@@ -1505,6 +1971,36 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		438EABBD1E0AD5E100E0D9CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CleverRaven.Cataclysm;
+				PRODUCT_NAME = Cataclysm;
+			};
+			name = Debug;
+		};
+		438EABBE1E0AD5E100E0D9CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CleverRaven.Cataclysm;
+				PRODUCT_NAME = Cataclysm;
 			};
 			name = Release;
 		};
@@ -1534,6 +2030,15 @@
 			buildConfigurations = (
 				4388A3331E004184008F29D6 /* Debug */,
 				4388A3341E004184008F29D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		438EABBC1E0AD5E100E0D9CE /* Build configuration list for PBXNativeTarget "Cataclysm-Curses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438EABBD1E0AD5E100E0D9CE /* Debug */,
+				438EABBE1E0AD5E100E0D9CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

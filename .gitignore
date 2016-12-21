@@ -133,3 +133,7 @@ msvc-full-features/distribution
 
 # Transifex Client
 .tx/
+
+# Xcode
+*project.xcworkspace/
+*xcuserdata
